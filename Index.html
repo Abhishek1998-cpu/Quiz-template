@@ -18,28 +18,52 @@
       <!-- <div> -->
       <div class="row">
         <div class="col-5 leftSidePart" style="height: 100vh">
-          <div class="subLeftSidePartDiv">
+          <div class="subLeftSidePartDiv" id="showScore">
             <div style="text-align: center" class="fs-4">Let's begin!</div>
             <div style="text-align: center">
               <p style="color: #6c87c3">
                 Answer 3 questions and win 150 coins free!
               </p>
             </div>
-            <div style="margin: 1rem; text-align: center">Question 1/3</div>
-            <div style="margin-bottom: 1rem; text-align: center" class="fs-4">
+            <div style="margin: 1rem; text-align: center">
+              Question <span id="currentQuestionNumber"></span>/<span
+                id="totalQuestionNumber"
+              ></span>
+            </div>
+            <div
+              style="margin-bottom: 1rem; text-align: center"
+              class="fs-4"
+              id="question"
+            >
               The National Game of India is?
             </div>
             <div class="gridButtons">
-              <button type="button" class="btn btn-primary buttonStyle">
+              <button
+                type="button"
+                class="btn btn-primary buttonStyle"
+                id="option1"
+              >
                 Cricket
               </button>
-              <button type="button" class="btn btn-primary buttonStyle">
+              <button
+                type="button"
+                class="btn btn-primary buttonStyle"
+                id="option2"
+              >
                 Hockey
               </button>
-              <button type="button" class="btn btn-primary buttonStyle">
+              <button
+                type="button"
+                class="btn btn-primary buttonStyle"
+                id="option3"
+              >
                 Chess
               </button>
-              <button type="button" class="btn btn-primary buttonStyle">
+              <button
+                type="button"
+                class="btn btn-primary buttonStyle"
+                id="option4"
+              >
                 Tennis
               </button>
             </div>
@@ -92,5 +116,6 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./Index.js"></script>
   </body>
 </html>
