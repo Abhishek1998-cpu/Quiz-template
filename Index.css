@@ -1,0 +1,39 @@
+
+* {
+  background-color: #0f172a;
+  color: white;
+}
+
+.subLeftSidePartDiv {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-content: center;
+}
+
+.gridButtons {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 0.5rem;
+}
+
+.buttonStyle {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 20px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0.5rem;
+    background-color: #20213f;
+}
+
+/* .rightSideImage */
+@media screen and (max-width: 530px) {
+   .rightSideImage {
+      display:none
+    }
+    .leftSidePart{
+        width: 90vh;
+    }
+  }
